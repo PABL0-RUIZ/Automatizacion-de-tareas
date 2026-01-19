@@ -1,0 +1,26 @@
+{
+    "Backup": {
+        "SourceDirectories": [
+            "C:\\Path\\To\\Your\\Documents",
+            "C:\\Path\\To\\Another\\Folder"
+        ],
+        "DestinationDirectory": "C:\\Backups\\Daily",
+        "RetentionDays": 7,
+        "LogFile": ".\\Logs\\backup.log"
+    },
+    "DatabaseBackup": {
+        "Engine": "MySQL",
+        "ConnectionString": "Server=localhost;Database=mydb;Uid=root;Pwd=password;",
+        "DumpCommand": "mysqldump",
+        "DestinationDirectory": "C:\\Backups\\Database",
+        "RetentionDays": 7
+    },
+    "Deployment": {
+        "RepoPath": "C:\\Projects\\MyWebApp",
+        "ServiceName": "MyWebAppService"
+    },
+    "Maintenance": {
+        "TempPath": "C:\\Windows\\Temp",
+        "MinDiskSpaceGB": 10
+    }
+}
